@@ -42,10 +42,10 @@ Feature: To test the get Endpoint of the apps
       And match response.[0].project[0].technology[2] == 'Gradle'
       And match response.[0].project[0].projectName == 'Movie App'
       And match response.[0].project[0].technology == "#[3]"
-    #wild card character
+     #wild card character
       And match response.[0].project[0].technology[*] == ['Kotlin','SQL Lite','Gradle']
       And match response.[0].experience[*] == ['Google','Apple','Mobile Iron']
-    #wild card to validate a specific value
+     #wild card to validate a specific value
      And match response.[0].project[0].technology[*] contains ['Kotlin']
      And match response.[0].experience[*] contains ['Apple','Mobile Iron']
 
