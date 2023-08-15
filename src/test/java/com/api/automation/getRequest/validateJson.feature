@@ -46,8 +46,8 @@ Feature: To test the get Endpoint of the apps
       And match response.[0].project[0].technology[*] == ['Kotlin','SQL Lite','Gradle']
       And match response.[0].experience[*] == ['Google','Apple','Mobile Iron']
      #wild card to validate a specific value
-     And match response.[0].project[0].technology[*] contains ['Kotlin']
-     And match response.[0].experience[*] contains ['Apple','Mobile Iron']
+      And match response.[0].project[0].technology[*] contains ['Kotlin']
+      And match response.[0].experience[*] contains ['Apple','Mobile Iron']
 
 
 
